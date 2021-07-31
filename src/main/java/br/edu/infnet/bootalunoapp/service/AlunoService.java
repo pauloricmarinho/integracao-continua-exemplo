@@ -25,6 +25,10 @@ public class AlunoService {
 //		this.alunoRepositorio = alunoRepositorio;
 	}
 
+	public AlunoService(AlunoRepository repo) {
+		this.alunoRepositorio = repo;
+	}
+
 	@Transactional
 	public Aluno salvar(Aluno aluno) {
 		logger.debug("entrou...");
