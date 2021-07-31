@@ -21,8 +21,7 @@
 	<div class="container">
 	
 		<div class="jumbotron">
-		   <h1> <i class="fa fa-tachometer" aria-hidden="true"></i> Aplicacao com springmvc</h1>
-		   <h3>Com spring boot</h3>
+		   <h3> <i class="fa fa-tachometer" aria-hidden="true"></i> Cadastro de Alunos </h3>
 		</div>
 
 		<h1>${tipoForm} alunos</h1>
