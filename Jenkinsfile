@@ -33,5 +33,11 @@ pipeline {
                  deploy adapters: [tomcat8(credentialsId: 'user-tomcat', path: '', url: 'http://localhost:8585')], contextPath: 'app-bootaluno', war: 'target/*.war'
              }
         }
+        
+         stage('Stage Integration Test') {
+             steps {
+                 bat 'mvn verify'
+             }
+        }
     }
 }
